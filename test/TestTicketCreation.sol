@@ -34,7 +34,7 @@ contract TestTicketTransfer {
   /// @notice The address of this test contract
   address thisContract = address(this);
 
-/// @notice BELOW FIVE TESTS RELATE TO TICKETCREATION.SOL */
+/// @notice BELOW FIVE TESTS RELATE TO TICKETCREATION.SOL
 
   /// @notice Making sure the contract deployer can call the circuit breaker and pause the contract
   function testCircuitBreaker() public {
