@@ -1,0 +1,9 @@
+Rinkeby Testnet Deployment
+
+The smart contracts have been deployed on Rinkeby testnet using Infura. The truffle-config.js file shows the testnet configuration.
+
+The contract address is 0xb9921D5616A4d76178B40b1a318e57be1E72977c, and can be located on:
+
+https://rinkeby.etherscan.io/address/0xb9921D5616A4d76178B40b1a318e57be1E72977c
+
+As shown in the ‘Contract’ tab, the contract source code has been verified. This was done using Etherscan’s contract verifier, which verified the ‘truffle-flattened’ smart contracts.
