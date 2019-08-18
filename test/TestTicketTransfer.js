@@ -63,7 +63,7 @@ contract('TicketTransfer', accounts => {
       });
     
     /// Tests if transfer of ticket ownership in the secondary market works, and after transfer, whether the quantity of tickets owned by each user changes
-    /// Also tests if the secondaryMarketStatus changes to 'OwnershipTransferred' after the transfer of ticket
+    /// Also tests if the secondaryMarketStatus changes to 'OwnershipTransferred' after the transfer of ticket in the secondary market
     it('ticket ownership gets transferred in the secondary market when seller sells to the approved buyer', async () => {
       const contract = await TicketTransfer.deployed();
       const oldOwner = await contract.ticketsToOwner(0);
@@ -83,7 +83,7 @@ contract('TicketTransfer', accounts => {
       });
     
     /// Tests whether the money is successfully transferred to the reseller as well as the contract deployer (as commission) following the secondary market purchase
-    /// Also test if the secondaryMarketStatus changes to 'DoneDeal' after the transaction is completed (i.e. after money is transferred)
+    /// Also test if the secondaryMarketStatus changes to 'DoneDeal' after the secondary market transaction is completed (i.e. after money is transferred)
     it('ticket price gets transferred to seller, seller\'s balance increases, CD\'s balance also increases due to commission', async () => {
       const contract = await TicketTransfer.deployed();
       const cdOldBalance = await web3.eth.getBalance(contractDeployer);
